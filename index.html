@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lawrence Law's profile</title>
+        <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <style>
+        html, body, section, header, article, iframe {
+            display: block;
+            margin: 0 0 25px 0;
+            padding: 0;
+            border: 0;
+        }
+        section#intro{
+            position: relative;
+            overflow: hidden;
+            height: 500px;
+        }
+        section#intro > iframe {
+            position: absolute;
+            left: 50%;
+            margin-left: -600px;
+            -webkit-transform: scaleX(1.5) translateX(0%) scaleY(1.5) translateY(0%);
+            height: 100%;
+            width: 1200px;
+        }
+        section#about, section#services, section#works, section#contact {
+            margin: 0 auto 0 auto;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        section#services {
+            margin:0 0 0 0;
+            background: no-repeat center center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-image: url(./2144.jpg)
+        }
+        section > header {
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: yellowgreen;
+            text-align: center;
+        }
+        section > article {
+            max-width: 750px;
+            padding-bottom: 25px;
+            letter-spacing: 1px;
+            line-height: 1.6;
+        }
+        .logo {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            margin-top: -100px;
+            margin-left: -100px;
+            top: 50%;
+            left: 50%;
+        }
+        .logo-text {
+            fill: lawngreen;
+            stroke:blue;
+            font-size: 35px;
+            font-family: 'Satisfy', cursive;
+        }
+
+        section > article > span.item {
+            vertical-align: top;
+            text-align: center;    
+            margin-top: 40px;
+            display: inline-block;
+            border: 3px solid greenyellow;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            line-height: 3;
+            padding: 25px;
+        }
+        section > article > span> span.image + p {
+            display: block;
+        }
+        section > article > span > span.image {
+            display: block;
+            background: no-repeat center center;
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+        }
+        section > article > span > span#frontend {
+            background-image: url(./frontend.png);
+        }
+    </style>
+    </head>
+    <body>
+        <section id="intro">
+            <iframe id="video" src="https://www.youtube.com/embed/7s8GH0IhHYA?wmode=transparent&modestbranding=0&autohide=0&branding=0&controls=0&showinfo=0&autoplay=1&mute=1&rel=0&enablejsapi=1&widgetid=1" frameborder="0" allowfullscreen="1"></iframe>            
+            <svg class="logo" width="200" height="200">
+                <circle cx="100" cy="100" r="60" stroke="yellow" fill="yellow" />
+                <text x="40%" y="60%" class="logo-text">Hi</text>
+                Sorry, your browser does not support inline SVG.
+            </svg>
+        </section>
+        <section id="about">
+            <header>About Me</header>
+            <article>A person keens on information technolgy solving real world problems. I had studied wide range of topics in computer world, including web technolgy, computer vision, deep learning
+            and had implemented projects respectively.
+            </article>
+        </section>
+        <section id="services">
+            <header>About Services</header>
+            <article>
+                I provides services for developing front-end web application, which includes manipulation of HTML, CSS, JavaScript libraries
+                The product of my services could be an introduction of company services web page, an interative game web page or etc.
+                <br/>
+                <span class="item">
+                    <span id="frontend" class="image"></span>
+                    <p>Web Development</p>
+                </span>
+            </article>
+        </section>
+        <section id="works">
+            <header>About works</header>
+            <article>
+                #Computer Vision #DeepLearning 
+                #Self-Driving Car projects
+                #Web Technology(HTML,JavaScript,CSS)
+            </article>
+        </section>
+        <section id="contact">
+            <header>About contact</header>
+            <article>
+                Telephone(Mobile)<br/>
+                +852 9141 4307<br/>
+                Email<br/>
+                kwanc.law@gmail.com<br/>
+            </article>
+        </section>
+    </body>
+</html>
